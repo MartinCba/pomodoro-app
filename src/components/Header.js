@@ -1,11 +1,17 @@
 import { View, Text, TouchableOpacity } from "react-native";
 const options = ["Pomodoro", "Short Break", "Long Break"];
 
-export const Header = ({ setTime, currentTime, setCurrentTime }) => {
+export const Header = ({
+  setTime,
+  currentTime,
+  setCurrentTime,
+  setIsActive,
+}) => {
   const handlePress = (index) => {
     const newTime = index === 0 ? 25 : index === 1 ? 5 : 15;
     setCurrentTime(index);
     setTime(newTime * 60);
+    setIsActive(false);
   };
 
   return (

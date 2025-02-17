@@ -6,7 +6,7 @@ export const Timer = ({ time }) => {
     .padStart(2, "0")}:${(time % 60).toString().padStart(2, "0")}`;
   return (
     <View className='bg-slate-50 rounded-[10px] w-full p-6 h-60 items-center justify-center'>
-      <Text className='text-[80px] font-bold'>{formattedTime}</Text>
+      <Text className='text-[80px] font-bold color-slate-800'>{formattedTime}</Text>
     </View>
   );
 };
