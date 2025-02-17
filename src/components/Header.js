@@ -14,11 +14,11 @@ export const Header = ({ setTime, currentTime, setCurrentTime }) => {
         <TouchableOpacity
           onPress={() => handlePress(index)}
           key={index}
-          className={`flex-1 border-4 p-2 items-center justify-center ${
-            currentTime === index ? "border-black" : "border-transparent"
+          className={`flex-1 border-4 p-2 items-center justify-center rounded-[10px] my-5 ${
+            currentTime === index ? "border-white" : "border-transparent"
           }`}
         >
-          <Text className='text-center  text-xl'>{option} </Text>
+          <Text className='text-center text-xl font-bold'>{option} </Text>
         </TouchableOpacity>
       ))}
     </View>
